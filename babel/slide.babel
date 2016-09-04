@@ -1,0 +1,9 @@
+(function($) {
+
+  $(function slideReady() {
+    $('#slider-design').slick({
+      infinite: true,
+    });
+  });
+
+})(jQuery);

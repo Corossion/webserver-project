@@ -1,0 +1,28 @@
+extends /base/_page.pug
+
+block page-title
+  | Slider
+
+block page-css
+  link(href='/src/css/page/page2.css', rel='stylesheet')
+
+block page-js
+  script(src='https://code.jquery.com/jquery-3.1.0.min.js')
+  script(src='/src/js/slick.min.js')
+  script(src='/src/js/slide.js')
+
+block page
+  #slider-design
+    - 
+      var i = 0;
+      var images = [
+        'http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg',
+        'http://placekitten.com.s3.amazonaws.com/homepage-samples/96/139.jpg',
+        'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+        'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/138.jpg',
+        'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+      ];
+    while i < 5
+      .image(class='image-' + i)
+        img(src=images[i])
+      - i++

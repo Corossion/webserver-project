@@ -1,0 +1,32 @@
+{
+  "name": "node-webserver-startup",
+  "version": "1.0.0",
+  "description": "A startup for webservers with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "start": "gulp build && node index.js",
+    "watch": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerraZero/node-webserver-startup.git"
+  },
+  "author": "TerraZero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerraZero/node-webserver-startup/issues"
+  },
+  "homepage": "https://github.com/TerraZero/node-webserver-startup#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "connect": "^3.4.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
+    "serve-static": "^1.11.1"
+  }
+}
